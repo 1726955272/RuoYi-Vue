@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form">
-      <h3 class="title">若依后台管理系统</h3>
+      <h3 class="title">王治平的GalGame小屋</h3>
       <el-form-item prop="username">
         <el-input
           v-model="loginForm.username"
@@ -58,6 +58,26 @@
     <div class="el-login-footer">
       <span>Copyright © 2018-2022 ruoyi.vip All Rights Reserved.</span>
     </div>
+    <vue-particles
+      class="login-bg"
+      style="position:absolute;width:100%;height: 100%"
+      自己设置css样式控制粒子显示的位置
+      color="#f4f4f4"
+      :particle-opacity="0.7"
+      :particles-number="100"
+      shape-type="circle"
+      :particle-size="4"
+      lines-color="#f4f4f4"
+      :lines-width="1"
+      :line-linked="true"
+      :line-opacity="0.4"
+      :lines-distance="150"
+      :move-speed="3"
+      :hover-effect="true"
+      hover-mode="grab"
+      :click-effect="true"
+      click-mode="push"
+    />
   </div>
 </template>
 
@@ -161,7 +181,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url("../assets/images/login-background.jpg");
+  background-image: url("../assets/images/008_80168678_p0.png");
   background-size: cover;
 }
 .title {
